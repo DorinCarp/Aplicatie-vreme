@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicație Vreme România</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sun"></div>
+        <div class="cloud one"></div>
+        <div class="cloud two"></div>
+        <div class="cloud three"></div>
+        
+        <h1>Vremea în România</h1>
+        <div class="current-weather">
+            <p id="city">Orașul: Iași</p>
+            <p id="temperature">Temperatura: -- °C</p>
+            <p id="description">Descriere: --</p>
+            <button onclick="getWeather()">Actualizează Vremea</button>
+        </div>
+    
+        <div class="forecast">
+            <h2>Prognoza pe următoarele 5 zile</h2>
+            <div id="forecast-container"></div>
+        </div>
+    </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

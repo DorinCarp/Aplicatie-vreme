@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa; /* Fundal deschis */
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    position: relative; /* Poziționare relativă pentru a plasa soarele și norii */
+}
+
+h1 {
+    color: #0277bd;
+}
+
+.current-weather, .forecast {
+    margin-top: 20px;
+}
+
+.current-weather p, .forecast h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #004d40;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0277bd;
+}
+
+#forecast-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.forecast-item {
+    text-align: center;
+    background: #f1f8e9;
+    padding: 10px;
+    border-radius: 8px;
+    width: 80px;
+    margin: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-item p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* Stilizare pentru soare */
+.sun {
+    position: absolute;
+    top: 20px; /* Ajustez în funcție de design */
+    right: 20px; /* Ajustez în funcție de design */
+    width: 80px;
+    height: 80px;
+    background-color: #ffeb3b; /* Culoare galbenă */
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 235, 59, 0.8);
+}
+
